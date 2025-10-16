@@ -10,26 +10,17 @@ interface Combo {
   benefits: string;
   weeklyPrice: number;
   monthlyPrice: number;
-  todayPrice: number;
   color: string;
   featured: boolean;
 }
 
 interface ComboCardProps {
   combo: Combo;
-  planType: "today-only" | "weekly" | "monthly";
+  planType: "weekly" | "monthly";
 }
 
 const ComboCard = ({ combo, planType }: ComboCardProps) => {
-  const price = 
-    planType === "today-only" 
-      ? combo.todayPrice 
-      : planType === "weekly" 
-      ? combo.weeklyPrice 
-      : combo.monthlyPrice;
-  
-  const buttonText = planType === "today-only" ? "Order Now" : "Subscribe Now";
-  const priceLabel = planType === "today-only" ? "one-time" : planType;
+  const price = planType === "weekly" ? combo.weeklyPrice : combo.monthlyPrice;
 
   return (
     <motion.div
@@ -50,12 +41,6 @@ const ComboCard = ({ combo, planType }: ComboCardProps) => {
           <div className="absolute top-4 right-4 flex items-center gap-1 bg-gradient-to-r from-mango to-accent text-foreground px-3 py-1 rounded-full text-xs font-semibold">
             <Star size={12} fill="currentColor" />
             <span>Most Loved</span>
-          </div>
-        )}
-        
-        {planType === "today-only" && (
-          <div className="absolute top-4 left-4 bg-gradient-to-r from-primary to-leaf text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold">
-            One-time Order
           </div>
         )}
 
@@ -91,11 +76,11 @@ const ComboCard = ({ combo, planType }: ComboCardProps) => {
 
         <div className="flex items-baseline gap-2 mb-4">
           <span className="text-3xl font-bold text-gradient-valley">₹{price}</span>
-          <span className="text-sm text-foreground/60">/ {priceLabel}</span>
+          <span className="text-sm text-foreground/60">/ {planType}</span>
         </div>
 
         <Button className="w-full bg-gradient-to-r from-primary to-leaf hover:shadow-soft transition-all duration-300">
-          {buttonText}
+          Subscribe Now
         </Button>
       </Card>
     </motion.div>
