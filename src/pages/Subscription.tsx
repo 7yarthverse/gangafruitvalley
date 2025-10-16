@@ -8,7 +8,7 @@ import SubscriptionFAQ from "@/components/subscription/SubscriptionFAQ";
 import Footer from "@/components/Footer";
 
 const Subscription = () => {
-  const [planType, setPlanType] = useState<"weekly" | "monthly">("weekly");
+  const [planType, setPlanType] = useState<"today-only" | "weekly" | "monthly">("weekly");
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted/30 to-primary/5">

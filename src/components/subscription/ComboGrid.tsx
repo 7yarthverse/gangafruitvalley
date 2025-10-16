@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
 
 interface ComboGridProps {
-  planType: "weekly" | "monthly";
+  planType: "today-only" | "weekly" | "monthly";
 }
 
 const combos = [
@@ -15,6 +15,7 @@ const combos = [
     benefits: "Energy, digestion, vitamins",
     weeklyPrice: 599,
     monthlyPrice: 2199,
+    todayPrice: 299,
     color: "mango",
     featured: true,
   },
@@ -25,6 +26,7 @@ const combos = [
     benefits: "Immunity, antioxidants",
     weeklyPrice: 699,
     monthlyPrice: 2599,
+    todayPrice: 349,
     color: "leaf",
     featured: false,
   },
@@ -35,6 +37,7 @@ const combos = [
     benefits: "Detox, hydration, skin clarity",
     weeklyPrice: 549,
     monthlyPrice: 1999,
+    todayPrice: 279,
     color: "river",
     featured: false,
   },
@@ -45,6 +48,7 @@ const combos = [
     benefits: "Hydration, mood lift",
     weeklyPrice: 649,
     monthlyPrice: 2399,
+    todayPrice: 329,
     color: "guava",
     featured: false,
   },
@@ -55,6 +59,7 @@ const combos = [
     benefits: "Local, fresh, diverse",
     weeklyPrice: 699,
     monthlyPrice: 2599,
+    todayPrice: 349,
     color: "accent",
     featured: false,
   },
@@ -65,6 +70,7 @@ const combos = [
     benefits: "Antioxidants, brain health",
     weeklyPrice: 799,
     monthlyPrice: 2999,
+    todayPrice: 399,
     color: "guava",
     featured: false,
   },
@@ -75,6 +81,7 @@ const combos = [
     benefits: "Vitamin C, immunity boost",
     weeklyPrice: 499,
     monthlyPrice: 1799,
+    todayPrice: 249,
     color: "mango",
     featured: false,
   },
@@ -85,6 +92,7 @@ const combos = [
     benefits: "Energy, heart health",
     weeklyPrice: 749,
     monthlyPrice: 2799,
+    todayPrice: 379,
     color: "leaf",
     featured: false,
   },
@@ -107,6 +115,13 @@ const ComboGrid = ({ planType }: ComboGridProps) => {
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
             Handpicked combinations designed for wellness, taste, and nature's best nutrition
           </p>
+          {planType === "today-only" && (
+            <div className="mt-6 p-4 bg-gradient-to-r from-mango/20 to-accent/20 border-2 border-mango/40 rounded-lg max-w-xl mx-auto">
+              <p className="text-foreground font-medium">
+                🌿 Enjoy fresh fruits delivered today — perfect for immediate health & peace!
+              </p>
+            </div>
+          )}
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
