@@ -12,7 +12,7 @@ const testimonials = [
   {
     name: "Arjun Singh",
     location: "Dehradun",
-    text: "The orchard experiences are magical. Walking through fruit groves at sunrise, learning from farmers — it's brought peace of mind I'd lost in city life.",
+    text: "The farm experiences are magical. Walking through fruit groves at sunrise, learning from farmers — it's brought peace of mind I'd lost in city life.",
     rating: 5,
   },
   {

@@ -11,7 +11,7 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-foreground/80 leading-relaxed">
-              Born from the serene valleys where the sacred Ganga flows and fruit orchards flourish, our app is your companion in embracing a life rooted in nature's wisdom.
+              Born from the serene valleys where the sacred Ganga flows and fresh fruits flourish, our app is your companion in embracing a life rooted in nature's wisdom.
             </p>
             
             <p className="text-lg text-foreground/80 leading-relaxed">

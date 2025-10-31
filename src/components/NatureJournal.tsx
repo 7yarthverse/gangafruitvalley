@@ -4,7 +4,7 @@ import { Calendar, User } from "lucide-react";
 const articles = [
   {
     title: "The Morning Ritual of Mango Groves",
-    excerpt: "Discover the ancient practice of sunrise walks through mango orchards and how they boost mental clarity...",
+    excerpt: "Discover the ancient practice of sunrise walks through mango groves and how they boost mental clarity...",
     date: "March 15, 2025",
     author: "Dr. Priya Sharma",
     category: "Wellness",

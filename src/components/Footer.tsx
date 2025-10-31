@@ -40,7 +40,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Explore</h3>
             <ul className="space-y-3">
-              {["About Us", "Features", "Orchard Visits", "Wellness Plans", "Blog"].map((link) => (
+              {["About Us", "Features", "Farm Visits", "Wellness Plans", "Blog"].map((link) => (
                 <li key={link}>
                   <a href="#" className="text-white/80 hover:text-white transition-colors">
                     {link}

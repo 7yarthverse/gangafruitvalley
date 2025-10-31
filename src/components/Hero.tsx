@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroValley}
-          alt="Lush green valley with Ganga river flowing through fruit orchards"
+          alt="Lush green valley with Ganga river flowing through nature"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/0 via-river/5 to-background/60"></div>

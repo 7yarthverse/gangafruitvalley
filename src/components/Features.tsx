@@ -10,8 +10,8 @@ const features = [
   },
   {
     icon: MapPin,
-    title: "Orchard Experiences",
-    description: "Book immersive visits to authentic fruit orchards and learn from local farmers",
+    title: "Farm Experiences",
+    description: "Book immersive visits to authentic fruit farms and learn from local farmers",
     color: "leaf",
   },
   {
