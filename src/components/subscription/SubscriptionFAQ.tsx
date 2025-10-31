@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: "Are these fruits organic?",
-    answer: "We source the freshest seasonal fruits from trusted local farms in the Ganga valley region. While not all fruits are certified organic, we prioritize natural farming practices and ensure all produce is thoroughly washed and quality-checked before delivery.",
+    answer: "We source the freshest seasonal fruits from trusted suppliers in the Ganga valley region. While not all fruits are certified organic, we prioritize natural farming practices and ensure all produce is thoroughly washed and quality-checked before delivery.",
   },
   {
     question: "What if I'm not satisfied with my delivery?",

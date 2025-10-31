@@ -12,7 +12,7 @@ const testimonials = [
   {
     name: "Arjun Singh",
     location: "Dehradun",
-    text: "The farm experiences are magical. Walking through fruit groves at sunrise, learning from farmers — it's brought peace of mind I'd lost in city life.",
+    text: "The app's wellness routines and fruit nutrition guides have transformed my daily habits. I feel more connected to nature and my health has improved significantly.",
     rating: 5,
   },
   {

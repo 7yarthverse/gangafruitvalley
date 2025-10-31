@@ -28,8 +28,8 @@ const About = () => {
                 <div className="text-sm text-foreground/80">Wellness Practices</div>
               </div>
               <div className="text-center p-4 bg-gradient-to-br from-mango/10 to-accent/20 rounded-2xl shadow-soft border-2 border-mango/20">
-                <div className="text-3xl font-bold text-mango mb-1">25+</div>
-                <div className="text-sm text-foreground/80">Valley Experiences</div>
+                <div className="text-3xl font-bold text-mango mb-1">10K+</div>
+                <div className="text-sm text-foreground/80">Happy Users</div>
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ const features = [
   {
     icon: Leaf,
     title: "Seasonal Freshness Guarantee",
-    description: "Only the freshest, in-season fruits handpicked from local farms",
+    description: "Only the freshest, in-season fruits carefully selected and delivered",
   },
   {
     icon: BookOpen,

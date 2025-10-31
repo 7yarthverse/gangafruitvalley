@@ -1,4 +1,4 @@
-import { Apple, MapPin, Heart, BookOpen, Leaf, Droplets } from "lucide-react";
+import { Apple, Heart, BookOpen, Leaf, Droplets } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const features = [
@@ -7,12 +7,6 @@ const features = [
     title: "Fruit-Based Nutrition",
     description: "Track your fruit intake, discover nutritional benefits, and create personalized fruit-based diet plans",
     color: "mango",
-  },
-  {
-    icon: MapPin,
-    title: "Farm Experiences",
-    description: "Book immersive visits to authentic fruit farms and learn from local farmers",
-    color: "leaf",
   },
   {
     icon: Heart,
